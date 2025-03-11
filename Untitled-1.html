@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shary's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        background: #f4f4f4;
+      }
+
+      header {
+        background: #333;
+        color: #fff;
+        padding: 15px 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+      }
+      .rightnav ul,
+      .leftnav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      .rightnav ul li,
+      .leftnav ul li {
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .rightnav ul li:hover,
+      .leftnav ul li:hover {
+        color: #ff9f55;
+      }
+
+      .section1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 5%;
+      }
+      .leftsection {
+        font-size: 24px;
+        max-width: 50%;
+      }
+      .leftsection .name {
+        color: #ff9f55;
+        font-weight: bold;
+      }
+      .rightsection img {
+        width: 300px;
+        border-radius: 10px;
+      }
+
+      .timeline {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 5%;
+      }
+      .container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .content span {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          text-align: center;
+        }
+        .section1 {
+          flex-direction: column;
+          text-align: center;
+        }
+        .leftsection {
+          max-width: 100%;
+        }
+        .rightsection img {
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="rightnav">
+          <ul>
+            <li class="Logo">Shary's Portfolio</li>
+          </ul>
+        </div>
+        <div class="leftnav">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="section1">
+        <div class="leftsection">
+          <div>
+            Hey, I am <span class="name">Muhammad Shaharyar.</span> I am
+          </div>
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="cryptocurrency-6560735_1920.png" alt="Profile Picture" />
+        </div>
+      </div>
+    </section>
+
+    <div class="timeline">
+      <div class="container">
+        <div class="content">
+          <span
+            ><i class="fa fa-file" style="color: #ff9f55"></i><b>37+</b> Basic
+            Projects Completed</span
+          >
+        </div>
+      </div>
+      <div class="container">
+        <div class="content">
+          <span
+            ><i class="fa fa-check-square" style="color: #ff9f55"></i
+            ><b>2+</b> Years Experience</span
+          >
+        </div>
+      </div>
+      <div class="container">
+        <div class="content">
+          <span
+            ><i class="fa fa-file" style="color: #ff9f55"></i
+            ><b>6+</b> Professional Projects Completed</span
+          >
+        </div>
+      </div>
+      <div class="container">
+        <div class="content">
+          <span
+            ><i class="fa fa-users" style="color: #ff9f55"></i
+            ><b>97.56%</b> Satisfaction Rate</span
+          >
+        </div>
+      </div>
+      <div class="container">
+        <div class="content">
+          <span
+            ><i class="fa fa-code" style="color: #ff9f55"></i><b>2+</b> Projects
+            Developing</span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
